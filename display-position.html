@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .b1{
+            width: 600px;
+            height: 300px;
+            border: 1px dashed black;
+            background-color:aqua;
+        }
+        .b2{
+            width: 570px;
+            height: 270px;
+            border: 1px solid black;
+            left: 30px;
+            margin-top: 15px;
+            margin-left: 15px;
+            background-color: pink;
+        }
+        .b3{
+            width: 540px;
+            height: 240px;
+            border: 1px solid black;
+            left: 30px;
+            margin-top: 15px;
+            margin-left: 15px;
+            background-color: red;
+        }
+        .b4{
+            width: 510px;
+            height: 210px;
+            border: 1px solid black;
+            left: 30px;
+            margin-top: 15px;
+            margin-left: 15px;
+            background-color: orange;
+        }
+        .b5{
+            width: 480px;
+            height: 180px;
+            border: 1px solid black;
+            left: 30px;
+            margin-top: 15px;
+            margin-left: 15px;
+            background-color: green;
+            text-align: center;
+        }
+        .b5>h1{
+            transform: translateY(50%);
+        }
+        .b2_1{
+            width: 600px;
+            height: 30px;
+            border: 1px dashed black;
+            background-color:aqua;
+            text-align: center;
+            margin-top: 50px;
+            padding: 1rem;
+        }
+        .h3-1{
+            background-color: yellow;
+            display: inline;
+        }
+        .h3-2{
+            background-color: orange;
+            display: inline;
+        }
+        .h3-3{
+            background-color: red;
+            display: inline;
+        }
+        .h3-4{
+            background-color: green;
+            display: inline;
+        }
+        .d1{
+            width: 50px;
+            height: 50px;
+            position: static;
+            background-color: red;
+        }
+        
+        .b2_2{
+            position: relative;
+            width: 600px;
+            height: 70px;
+            border: 1px dashed black;
+            background-color:aqua;
+        }
+        .d2{
+            width: 50px;
+            height: 50px;
+            background-color: red;
+            position: absolute;
+            top: 0;
+        }
+        .d3{
+            background-color: red;
+            position: absolute;
+            top: 10px;
+        }
+        .c1{
+            width: 100%;
+            height: 300%;
+            position: fixed;
+            top: 0;
+            background-color: black;
+            opacity: 0.5;
+        }
+        .c1_1{
+            width: 400px;
+            height: 100px;
+            background-color: white;
+            position: fixed;
+            left: 30%;
+            top: 50%;
+            text-align: center;
+            padding: 50px;
+            color: pink;
+            opacity: none;
+        }
+    </style>
+</head>
+<body>
+    <h1>Box Model</h1>
+    <div class="b1">
+        <div class="b2">
+            <div class="b3">
+                <div class="b4">
+                    <div class="b5">
+                        <h1>Simple Box</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <h1>inline</h1>
+    <div class="b2_1">
+        <h3 class="h3-1">inline text1</h3>
+        <h3 class="h3-2">inline text2 </h3>
+        <h3 class="h3-3">inline text3 </h3>
+        <h3 class="h3-4">inline text4 </h3>     
+    </div>
+    <h1>block</h1>
+    <div class="b2_1" style="height: 200px;">
+        <h3 class="h3-1" style="display: block;">inline text1</h3>
+        <h3 class="h3-2" style="display: block;">inline text2</h3>
+        <h3 class="h3-3" style="display: block;">inline text3</h3>
+        <h3 class="h3-4" style="display: block;">inline text4</h3>  
+    </div>
+    <h1>inline-Box</h1>
+    <div class="b2_1">
+        <h3 class="h3-1" style="display: inline-block;">apple</h3>
+        <h3 class="h3-2" style="display: inline-block;">orange</h3>
+        <h3 class="h3-3" style="display: inline-block;">mango</h3>
+        <h3 class="h3-4" style="display: inline-block;">watermelon</h3> 
+    </div>
+    <h1>none</h1>
+    <div class="b2_1">
+        <h3 class="h3-1" style="display: inline-block;">apple</h3>
+        <h3 class="h3-2" style="display: inline-block;">orange</h3>
+        <h3 class="h3-3" style="display: none;">mango</h3>
+        <h3 class="h3-4" style="display: inline-block;">watermelon</h3> 
+    </div>
+    <h1>display:none vs visibility:hidden</h1>
+    <div class="b2_1">
+        <h3 class="h3-1" style="display: inline-block;">apple</h3>
+        <h3 class="h3-2" style="visibility: hidden;">orange</h3>
+        <h3 class="h3-3" style="display: none;">mango</h3>
+        <h3 class="h3-4" style="display: inline-block;">watermelon</h3> 
+    </div>
+    <h1>CSS</h1>
+    <h1>static</h1>
+    <div class="b2_1" style="height: 50px;">
+        <div class="d1"></div>
+    </div>
+    <h1>absolute</h1>
+    <h2>fixed width/height</h2>
+    <div class="b2_2">
+        <div class="d2">asd</div>
+    </div>
+    <h2>no width/height</h2>
+    <div class="b2_2">
+        <div class="d3" style="width: 100%;height: 5px;"></div>
+    </div>
+    <div class="c1">
+    </div>
+    <div class="c1_1">
+        <h1>Songkran Festival<br>2023</h1>
+    </div>
+</body>
+</html>
